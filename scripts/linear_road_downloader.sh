@@ -1,0 +1,1 @@
+wget https://chalmersuniversity.box.com/shared/static/ioal17insfry4naurtybkp44dxev59ta.txt -O ../input/ioal17insfry4naurtybkp44dxev59ta.txt
