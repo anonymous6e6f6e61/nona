@@ -60,7 +60,7 @@ public class RiotStats {
                 .window(SlidingEventTimeWindows.of(ECG1_AVERAGE_WINDOW_SIZE, ECG1_AVERAGE_WINDOW_ADVANCE))
                 .aggregate(new StatsEcg1Average(settings.aggregateStrategySupplier()))
                 .name("StatsEcg1Average" + settings.queryID())
-                .filter(t -> t.f0 > 1)
+                .filter(t -> t.f0 > 2.0)
                 .name("ECG2Filter" + settings.queryID());
 
         DataStream<Tuple2GL<Double, String>> ecg2stream = sourceStream
@@ -68,7 +68,7 @@ public class RiotStats {
                 .window(SlidingEventTimeWindows.of(ECG2_AVERAGE_WINDOW_SIZE, ECG2_AVERAGE_WINDOW_ADVANCE))
                 .aggregate(new StatsEcg2Average(settings.aggregateStrategySupplier()))
                 .name("StatsEcg2Average" + settings.queryID())
-                .filter(t -> t.f0 > 1)
+                .filter(t -> t.f0 > 2.0)
                 .name("ECG2Filter" + settings.queryID());
 
         DataStream<Tuple7GL<Double, Double, Double, Double, Double, Double, String>>
