@@ -12,7 +12,7 @@ Executing the experiments requires access to two machines. One of these will ser
 You will need the following programs on your main machine:
 
 *  `git`
-* ` wget`
+*  `wget`
 *  `tar`
 *  `conda`
 *  `java 8`
