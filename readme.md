@@ -84,11 +84,11 @@ wget https://archive.apache.org/dist/kafka/3.2.1/kafka_2.13-3.2.1.tgz
 tar zxvf kafka_2.13-3.2.1.tgz
 ```
 
-6. Back on your main machine, to enable communication with your remote machine at `XXX.XX.XX.XXX`, edit the file `ROOT/configs/global_config.yaml`. 
+6. Back on your main machine, to enable communication with your remote machine at `XXX.XX.XX.XXX`, edit the file `ROOT/configs/global_config.yaml`: 
 
-* At `kafka_server_port_remote`, enter `"XXX.XX.XX.XXX:9092"`.
-* At `remote_root`, enter `"REMOTE_ROOT"`.
-* At `ssh_prefix`, enter `ssh your_remote_username@XXX.XX.XX.XXX`. 
+* at `kafka_server_port_remote`, enter `"XXX.XX.XX.XXX:9092"`
+* at `remote_root`, enter `"REMOTE_ROOT"`
+* at `ssh_prefix`, enter `ssh your_remote_username@XXX.XX.XX.XXX`.
 
 **NOTE:** It is important that you have set up passwordless ssh login to your remote machine, as explained for example [here](https://linuxize.com/post/how-to-setup-passwordless-ssh-login/).
 
