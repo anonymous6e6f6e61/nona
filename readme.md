@@ -67,6 +67,7 @@ And source your edited `bashrc`:
 source ~/.bashrc
 ```
 Now, the command `kcat` is functional.
+
 5. On your remote machine at `XXX.XX.XX.XXX`, download this repository. We will refer to the root folder of this repository on your remote machine as `REMOTE_ROOT`. Then, in `REMOTE_ROOT`, execute the following to package the required java classes:
 ```
 mvn clean package
